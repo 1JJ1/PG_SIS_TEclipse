@@ -17,8 +17,8 @@
 <block-list> = block
 <exchange-statement> = accept, select
 <conditional-statement> = cond_entry
-<BEGIN> = {
-<END> = }
+<BEGIN> = begin
+<END> = end
 <variable> = var
 <name_of_literal_item> = as_id_s, as_name, named_stm_id
 <variant_part> = as_variant_s

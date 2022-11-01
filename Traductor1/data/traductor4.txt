@@ -72,3 +72,5 @@
 <pragma> = pragma
 <pragma_argument_association> = pragma_id
 <restriction_pragma> = pragma_s
+<begin> = begin
+<end> = end

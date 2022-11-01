@@ -26,7 +26,7 @@ public class Main {
 			System.out.println("3. Cargar las propiedades del traductor de C.");
 			System.out.println("4. Cargar las propiedades del traductor desde ADA.");
 			System.out.println("5. Cargar las propiedades del traductor desde JOVIAL.");
-			System.out.println("6. Cargar las propiedades del traductor de C.");
+			System.out.println("6. Cargar las propiedades del traductor desde C.");
 			System.out.println("0. Detener ejecucion.");
 			System.out.println("----------------------------------------------------");
 			System.out.println("Ingrese la opcion deseada  :) ");
@@ -189,7 +189,7 @@ public class Main {
 			case 5:
 				System.out.println("Ingrese la sentencia BNF en JOVIAL a traducir: ");
 				String sentenciaJOVIAL2 = lector.next();
-				String[] xJOVIAL2 = sentenciaJOVIAL2.split("-");
+				String[] xJOVIAL2 = sentenciaJOVIAL2.split("--");
 				ArrayList<String> xJOVIAL2x = new ArrayList<String>();
 				ArrayList<String> xMalJ2 = new ArrayList<String>();
 				for(int i = 0; i < xJOVIAL2.length; i++) {
@@ -227,7 +227,7 @@ public class Main {
 			case 6:
 				System.out.println("Ingrese la sentencia BNF en C a traducir: ");
 				String sentenciaC2 = lector.next();
-				String[] xC2 = sentenciaC2.split("-");
+				String[] xC2 = sentenciaC2.split("--");
 				ArrayList<String> xC2x = new ArrayList<String>();
 				ArrayList<String> xMalC2 = new ArrayList<String>();
 				for(int i = 0; i < xC2.length; i++) {

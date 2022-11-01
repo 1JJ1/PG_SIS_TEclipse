@@ -6,8 +6,8 @@
 <compound-statement> = code
 <selection-statement> = if, case
 <iteration-statement> = LOOP, block
-<selection-statement> = select
-<conditional-expression> = cond_entry
+<selection-statement> = cond_entry
+<conditional-expression> = select
 <primary-expression> = var, as_variant_s, as_object, as_choice, variant_s
 <constant> = constant
 <typedef-name> = as_id_s, var_id, variant, task_body_id, proc_id, pragma_id
@@ -22,7 +22,6 @@
 <string> = string_literal
 <enumeration-list> = enum_literal_s
 TYPE_SPEC = <type-specifier>
-<integer-constant> = integer
 <struct-declarator-list> = array
 <storage-class-specifier> = record
 <storage-class-specifier> = task_spec
@@ -38,6 +37,8 @@ TYPE_SPEC = <type-specifier>
 <declarator> = entry_id
 <pragma> = pragma 
 <external-declaration> = pragma_s
+<{> = begin
+<}> = end
 
 null_stm
 delay = <>
