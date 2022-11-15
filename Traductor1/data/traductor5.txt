@@ -8,15 +8,14 @@
 <output-statement> = exit
 <return-statement> = return
 <go-to-statement> = goto
-<entry-list> = entry_call
+<entry-modifier> = entry_call
 <stop-statement> = delay
 <direct-code-statement> = code
-<conditional-statement> = if
+<conditional-statement> = if, cond_entry
 <test-statement> = case
 <loop-statement> = LOOP
 <block-list> = block
 <exchange-statement> = accept, select
-<conditional-statement> = cond_entry
 <BEGIN> = begin
 <END> = end
 <variable> = var
@@ -30,14 +29,13 @@
 <index-list> = variant_part
 <literal-variable> = variant_s
 <comments> = tx_comments
-<formula> = EXP
+<formula> = EXP, exp_s
 <numeric-formula> = numeric_literal
 <structured-entry-list> = aggregate
 <overlay-list> = allocator
 <CONVERT> = conversion
 <BIT> = conversion
 <BYTE> = conversion
-<formula> = exp_s 
 <literal-variable> = string_literal 
 <declarator> = string_literal
 <numeric-formula> = enum_literal_s
@@ -61,8 +59,8 @@
 <letter> = DEF_OCCURRENCE
 <test-statement> = pragma, pragma_s
 
-abort = <>
-raise = <>
-EXP_CONSTRAINED = formulas: <formula>
-EXP_VOID = formulas: <formulas>
-qualified = <>
+//abort = <>
+//raise = <>
+//EXP_CONSTRAINED = formulas: <formula>
+//EXP_VOID = formulas: <formulas>
+//qualified = <>

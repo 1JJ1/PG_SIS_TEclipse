@@ -1,8 +1,8 @@
 <statement> = STM
 <labeled-statement> = name_stm
 <assignment-expression> = assign
-<expression-statement> = procedure_call
-<jump-statement> = exit, return, goto, entry_call
+<function-definition> = procedure_call
+<jump-statement> = goto, return
 <compound-statement> = code
 <selection-statement> = if, case
 <iteration-statement> = LOOP, block
@@ -26,8 +26,7 @@ TYPE_SPEC = <type-specifier>
 <storage-class-specifier> = record
 <storage-class-specifier> = task_spec
 <floating-constant> = float
-<function-definition> = function
-<declaration-specifier> = function_call, as_name_void
+<expression-statement> = function, function_call, as_name_void
 <parameter-declaration> = as_param_s
 <parameter-list> = param_s
 <parameter-type-list> = as_param_assoc
@@ -40,11 +39,11 @@ TYPE_SPEC = <type-specifier>
 <{> = begin
 <}> = end
 
-null_stm
-delay = <>
-abort = <>
-raise = <>
-accept = <>
-access = <>
-derived = <>
-fixed = <>
+//null_stm
+//delay = <>
+//abort = <>
+//raise = <>
+//accept = <>
+//access = <>
+//derived = <>
+//fixed = <>
